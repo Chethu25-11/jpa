@@ -1,6 +1,10 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.*;
 
-public class VotingRunner {
+public class Reporting {
+
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -11,13 +15,10 @@ public class VotingRunner {
         } finally {
             System.out.println("Driver loaded successfuly");
         }
-        String url = "jdbc:mysql://localhost:3306/voting";
+        String url = "jdbc:mysql://localhost:3306/reporting_tool";
         String userName = "root";
-        String psw = "root9880244807";
-        String insertQuery="INSERT INTO Voting (vote_id, voter_name, candidate_name, voting_date)VALUES (1, 'Mahesh', 'Rohit Sharma', '2025-12-08');";
-
-        
-
+        String psw = "root";
+        String insertQuery="INSERT INTO Reporting (report_id, report_title, report_date, created_by) VALUES (?,?,?,?)";
         Connection connection=null;
         PreparedStatement preparedStatement=null;
         try {
@@ -25,13 +26,11 @@ public class VotingRunner {
             System.out.println("Connection established successfully: " + connection);
 
             preparedStatement = connection.preparedStatement(query);
-
-            preparedStatement.setInt(1, 1);
-            preparedStatement.setString(2, "Mahesh");
-            preparedStatement.setString(3,"Rohit Sharma");
-            preparedStatement.setString(4,"2025-12-08");
-            System.out.println("data inserted successfully");
-
+           preparedStatement.setInt(1,1);
+           preparedStatement.setString(2,"Monthly Sales Summary");
+           preparedStatement.setString(3,"2025-12-08");
+           preparedStatement.setString(4,"Ramesh" );
+            System.out.println("Data inserted successfully");
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {

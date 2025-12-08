@@ -1,6 +1,11 @@
-import java.sql.*;
+package com.xworkz.ecom.product;
 
-public class VotingRunner {
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ProductRunner {
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -11,26 +16,19 @@ public class VotingRunner {
         } finally {
             System.out.println("Driver loaded successfuly");
         }
-        String url = "jdbc:mysql://localhost:3306/voting";
+        String url = "jdbc:mysql://localhost:3306/ecom";
         String userName = "root";
-        String psw = "root9880244807";
-        String insertQuery="INSERT INTO Voting (vote_id, voter_name, candidate_name, voting_date)VALUES (1, 'Mahesh', 'Rohit Sharma', '2025-12-08');";
-
-        
-
+        String psw = "root";
+        String insertQuery="insert into product_info values(1,\"pen\",20,10)";
         Connection connection=null;
-        PreparedStatement preparedStatement=null;
+        Statement statement=null;
         try {
             connection = DriverManager.getConnection(url, userName, psw);
             System.out.println("Connection established successfully: " + connection);
 
-            preparedStatement = connection.preparedStatement(query);
-
-            preparedStatement.setInt(1, 1);
-            preparedStatement.setString(2, "Mahesh");
-            preparedStatement.setString(3,"Rohit Sharma");
-            preparedStatement.setString(4,"2025-12-08");
-            System.out.println("data inserted successfully");
+            statement = connection.createStatement();
+            boolean ref = statement.execute(insertQuery);
+            System.out.println("Data inserted successfully: " + ref);
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -44,14 +42,18 @@ public class VotingRunner {
                     e.printStackTrace();
                 }
             }
-            if (preparedStatement != null) {
+            if (statement != null) {
                 try {
-                    preparedStatement.close();
+                    statement.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
-        }
+  }
 
-    }
 }
+}
+
+
+
+

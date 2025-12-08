@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class VotingRunner {
+public class WeatherRunner {
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -11,27 +11,23 @@ public class VotingRunner {
         } finally {
             System.out.println("Driver loaded successfuly");
         }
-        String url = "jdbc:mysql://localhost:3306/voting";
+        String url = "jdbc:mysql://localhost:3306/weather";
         String userName = "root";
         String psw = "root9880244807";
-        String insertQuery="INSERT INTO Voting (vote_id, voter_name, candidate_name, voting_date)VALUES (1, 'Mahesh', 'Rohit Sharma', '2025-12-08');";
+        String insertQuery="INSERT INTO WeatherInfo (City, Temperature, WeatherCondition) VALUES(?, ?, ?)";
 
-        
+
 
         Connection connection=null;
         PreparedStatement preparedStatement=null;
         try {
             connection = DriverManager.getConnection(url, userName, psw);
             System.out.println("Connection established successfully: " + connection);
-
             preparedStatement = connection.preparedStatement(query);
-
-            preparedStatement.setInt(1, 1);
-            preparedStatement.setString(2, "Mahesh");
-            preparedStatement.setString(3,"Rohit Sharma");
-            preparedStatement.setString(4,"2025-12-08");
+           preparedStatement.setString(1,"Tumkur");
+           preparedStatement.setInt(2, 30);
+           preparedStatement.setInt(3,"Sunny");
             System.out.println("data inserted successfully");
-
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
