@@ -1,9 +1,6 @@
 package com.xworkz.ecom.product;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class ProductRunner {
     public static void main(String[] args) {
@@ -21,14 +18,12 @@ public class ProductRunner {
         String psw = "root";
         String insertQuery="insert into product_info values(1,\"pen\",20,10)";
         Connection connection=null;
-        Statement statement=null;
+        PreparedStatement preparedStatement=null;
         try {
             connection = DriverManager.getConnection(url, userName, psw);
             System.out.println("Connection established successfully: " + connection);
+         preparedStatement=connection.prepareStatement(insertQuery);
 
-            statement = connection.createStatement();
-            boolean ref = statement.execute(insertQuery);
-            System.out.println("Data inserted successfully: " + ref);
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -42,9 +37,9 @@ public class ProductRunner {
                     e.printStackTrace();
                 }
             }
-            if (statement != null) {
+            if (preparedStatement != null) {
                 try {
-                    statement.close();
+                    preparedStatement.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }

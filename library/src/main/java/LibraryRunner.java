@@ -26,6 +26,7 @@ public class LibraryRunner {
             preparedStatement.setString(2,  "A.P.J. Abdul Kalam");
 
             preparedStatement.setInt(3,2);
+           preparedStatement.execute();
 
 
         } catch (SQLException e) {

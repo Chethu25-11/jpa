@@ -30,6 +30,7 @@ public class Reporting {
            preparedStatement.setString(2,"Monthly Sales Summary");
            preparedStatement.setString(3,"2025-12-08");
            preparedStatement.setString(4,"Ramesh" );
+           preparedStatement.execute();
             System.out.println("Data inserted successfully");
         } catch (SQLException e) {
             e.printStackTrace();

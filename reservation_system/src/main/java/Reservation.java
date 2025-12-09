@@ -30,6 +30,7 @@ public class Reservation {
             preparedStatement.setString(3,"2025-12-08");
             preparedStatement.setInt(4,5);
             preparedStatement.setInt(5,4);
+            preparedStatement.execute();
             System.out.println("Data inserted successfully");
         } catch (SQLException e) {
             e.printStackTrace();

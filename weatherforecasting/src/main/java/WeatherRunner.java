@@ -27,6 +27,7 @@ public class WeatherRunner {
            preparedStatement.setString(1,"Tumkur");
            preparedStatement.setInt(2, 30);
            preparedStatement.setInt(3,"Sunny");
+           preparedStatement.execute();
             System.out.println("data inserted successfully");
         } catch (SQLException e) {
             e.printStackTrace();

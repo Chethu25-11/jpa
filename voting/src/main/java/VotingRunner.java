@@ -30,6 +30,7 @@ public class VotingRunner {
             preparedStatement.setString(2, "Mahesh");
             preparedStatement.setString(3,"Rohit Sharma");
             preparedStatement.setString(4,"2025-12-08");
+            preparedStatement.execute();
             System.out.println("data inserted successfully");
 
         } catch (SQLException e) {
