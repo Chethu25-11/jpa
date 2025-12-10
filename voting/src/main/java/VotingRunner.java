@@ -24,7 +24,7 @@ public class VotingRunner {
             connection = DriverManager.getConnection(url, userName, psw);
             System.out.println("Connection established successfully: " + connection);
 
-            preparedStatement = connection.preparedStatement(query);
+            preparedStatement = connection.npreparedStatemet(query);
 
             preparedStatement.setInt(1, 1);
             preparedStatement.setString(2, "Mahesh");
