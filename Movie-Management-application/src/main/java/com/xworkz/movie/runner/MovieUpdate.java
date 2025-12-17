@@ -1,9 +1,10 @@
-package com.xworkz.movie.entity;
+package com.xworkz.movie.runner;
+import com.xworkz.movie.entity.MovieEntity;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-
 
 public class MovieUpdate {
     public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class MovieUpdate {
             et.begin();
             MovieEntity entity = em.find(MovieEntity.class, 1);
             System.out.println("old data: " + entity);
-            entity.setReleaseYear(2025);
+            entity.setDirector("neel");
             MovieEntity updateEntity = em.merge(entity);
             System.out.println("update data: " + updateEntity);
             et.commit();
@@ -31,5 +32,6 @@ public class MovieUpdate {
 
             }
         }
-    }
+}
+
 }

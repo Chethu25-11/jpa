@@ -12,7 +12,7 @@ import javax.persistence.EntityTransaction;
 public class TrafficRunner {
     public static void main(String[] args) {
         TrafficEntity entity = new TrafficEntity();
-        entity.setvehicleId("1");
+
         entity.setDriver("Prashant");
         entity.setRoute("tumkur");
 
@@ -37,7 +37,7 @@ public class TrafficRunner {
             if (em != null) {
                 em.close();
             }
- }
+        }
+    }
 }
 
-}

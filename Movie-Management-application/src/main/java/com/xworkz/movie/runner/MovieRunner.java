@@ -14,7 +14,7 @@ public class MovieRunner {
         MovieEntity entity = new MovieEntity();
         entity.setTitle("RRR");
         entity.setDirector("rajmouli");
-        entity.setReleaseYear("2021");
+
 
         EntityManagerFactory emf = null;
         EntityManager em = null;

@@ -10,7 +10,7 @@ import javax.persistence.Persistence;
 public class SportsRunner {
     public static void main(String[] args) {
         SportsEntity entity = new SportsEntity();
-        entity.setTeamId("1");
+
         entity.setPlayer("Prashant");
         entity.setLocation("tumkur");
 
