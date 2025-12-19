@@ -15,7 +15,6 @@ import javax.persistence.*;
 public class MobileEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "mobile_id")
 private int mobileId;
 @Column(name = "name")
 private String Name;
