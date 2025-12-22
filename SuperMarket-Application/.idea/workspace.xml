@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="200fd66c-be86-4580-b160-38300c40b160" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Instagram-application/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Instagram-application/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Instagram-application/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Instagram-application/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Instagram-application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/src/main/java/com/xworkz/inventory/entity/InventoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/src/main/java/com/xworkz/inventory/repository/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/src/main/java/com/xworkz/inventory/repository/InventoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/src/main/java/com/xworkz/inventory/runner/InventoryRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/src/main/java/com/xworkz/inventory/service/InventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/src/main/java/com/xworkz/inventory/service/InventoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Inventory-Mangement/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/src/main/java/com/xworkz/examination/entity/ExaminationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/src/main/java/com/xworkz/examination/repository/Examination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/src/main/java/com/xworkz/examination/repository/ExaminationImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/src/main/java/com/xworkz/examination/runner/ExaminationRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/src/main/java/com/xworkz/examination/service/ExaminationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/src/main/java/com/xworkz/examination/service/ExaminationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Student-Exaninination/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobile-management-system/src/main/java/com/xworkz/mobile/repository/MobileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile-management-system/src/main/java/com/xworkz/mobile/repository/MobileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobile-management-system/src/main/java/com/xworkz/mobile/repository/MobileRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile-management-system/src/main/java/com/xworkz/mobile/repository/MobileRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobile-management-system/src/main/java/com/xworkz/mobile/service/MobileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile-management-system/src/main/java/com/xworkz/mobile/service/MobileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobile-management-system/src/main/java/com/xworkz/mobile/service/MobileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile-management-system/src/main/java/com/xworkz/mobile/service/MobileServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="37BTh7ePT4W4tGyiR78WOaBitm6" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/Chethan Gowda/OneDrive/Desktop/jpa/SuperMarket-Application/src/main/java/org/example/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.xworkz.market.entity.repository" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="200fd66c-be86-4580-b160-38300c40b160" name="Changes" comment="" />
+      <created>1766375583984</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766375583984</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

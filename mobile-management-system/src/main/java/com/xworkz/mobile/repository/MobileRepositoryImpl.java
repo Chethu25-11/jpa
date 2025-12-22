@@ -121,3 +121,34 @@ public class MobileRepositoryImpl implements MobileRepository {
     }
 
 }
+//@Override
+//public boolean deleteById(int id) {
+    //System.out.println("invoking deleteByid in repositoryImpl");
+   // boolean isDeleted = false;
+   // try {
+     //   EntityManagerFactory emf = peristence.createEntityManagerFactory("mobile");
+     //   EntityManager em = emf.createEntityManager();
+       // EntityTransaction et = em.getTransaction();
+        //et.begin();
+
+        //et.commit();
+    //}catch (Exception e){
+      //  e.printStackTrace();
+
+//    }finally {
+  //      if(emf!=null){
+    //        emf.close();
+      //  }
+    //}
+//}
+@Override
+public MobileEntity validateAndFindById(int id) {
+    System.out.println("invoking validateAndFindById in ServiceImpl");
+    MobileEntity entity = null;
+    if (id > 0) {
+        Object repoitory;
+        entity = repoitory.findMobileById(id);
+    }
+    return entity;
+}
+

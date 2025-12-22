@@ -50,6 +50,16 @@ public class MobileServiceImpl implements MobileService {
         }
         return isValidated;
     }
+@Override
+public MobileEntity validateAndFindById(int id){
+    System.out.println("Invoking saveMobileInfo in RepositoryImpl");
+    MobileEntity entity=null;
+    if(id>0){
+        entity=repository.findMobileEntityById(id);
+
+    }
+    return entity;
+}
 
 
 }

@@ -8,5 +8,5 @@ public interface MobileService {
     MobileEntity validateAllDetailsById(MobileEntity entity);
 
 
-
+    MobileEntity validateAndFindById(int id);
 }
