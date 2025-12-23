@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Entity
 @Setter
 @ToString
-@Table(name ="facebook_info" )
+@Table(name ="examination_info" )
 public class ExaminationEntity {
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

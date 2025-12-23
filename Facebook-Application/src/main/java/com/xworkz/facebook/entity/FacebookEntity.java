@@ -12,14 +12,17 @@ import javax.persistence.*;
 @ToString
 @Table(name = "facebook_info")
 public class FacebookEntity {
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int Id;
+    private int id;
+
     @Column(name = "user_name")
-    private String UserName;
+    private String userName;
+
     @Column(name = "account_privacy")
-    private String AccountPrivacy;
+    private String accountPrivacy;
+
     @Column(name = "followers")
-    private int Followers;
+    private int followers;
 }

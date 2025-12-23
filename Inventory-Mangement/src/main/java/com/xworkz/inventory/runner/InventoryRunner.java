@@ -1,4 +1,5 @@
 package com.xworkz.inventory.runner;
+
 import com.xworkz.inventory.entity.InventoryEntity;
 import com.xworkz.inventory.service.InventoryService;
 import com.xworkz.inventory.service.InventoryServiceImpl;
@@ -7,15 +8,15 @@ public class InventoryRunner {
     public static void main(String[] args) {
 
         InventoryEntity inventory = new InventoryEntity();
-        inventory.setItemName("Steel Bolts");
+        inventory.setItemName("Tata steel");
         inventory.setCategory("Hardware");
         inventory.setQuantity(1200);
         inventory.setWarehouseLocation("Banglore-WH1");
         inventory.setLastUpdate("2025-01-01");
 
         InventoryEntity inventory1 = new InventoryEntity();
-       inventory1.setItemName("Packing Box");
-       inventory1.setCategory("Packaging");
+        inventory1.setItemName("Packing Box");
+        inventory1.setCategory("Packaging");
         inventory1.setQuantity(5000);
         inventory1.setWarehouseLocation("Banglore-WH2");
         inventory1.setLastUpdate("2025-04-01");

@@ -11,10 +11,11 @@ import javax.persistence.*;
 @Setter
 @ToString
 @Table(name = "instagram_info")
+@NamedQuery(name = "findAllInstagramEntity", query = "SELECT m from InstagramEntity m")
 public class InstagramEntity {
-    @javax.persistence.Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
-@Column(name = "id")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int Id;
     @Column(name = "name")
     private String Name;

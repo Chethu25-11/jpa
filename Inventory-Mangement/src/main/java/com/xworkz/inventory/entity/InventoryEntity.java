@@ -1,4 +1,5 @@
 package com.xworkz.inventory.entity;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

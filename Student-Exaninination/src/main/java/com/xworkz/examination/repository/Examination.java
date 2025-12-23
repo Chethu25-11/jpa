@@ -4,5 +4,6 @@ import com.xworkz.examination.entity.ExaminationEntity;
 
 public interface Examination {
     boolean saveInventoryInfo(ExaminationEntity entity);
-    boolean updateItemNameCategoryquantityById(String Name, int RegisterNumber, String Address, int Id);
+    String updateAllDetailsById(ExaminationEntity entity);
+    boolean deleteById(int Id);
 }
